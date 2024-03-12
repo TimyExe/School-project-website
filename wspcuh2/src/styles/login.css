@@ -5,7 +5,43 @@
     align-items: center;
     height: 100vh;
   }
-  
+  /* Style for the file input container */
+.file-input-container {
+  margin-bottom: 10px; /* Aligns with other form elements */
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Custom style for the file input 'button' */
+.file-input-button {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  background-color: #ff69b4; /* Match your button color */
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input-button:hover {
+  opacity: 0.8;
+  background-color: #c5528b
+}
+
+/* Hide the actual input but make it accessible */
+input[type="file"] {
+  opacity: 0; /* Hidden but accessible */
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
   .login-form {
     background-color: #fff;
     border-radius: 10px;
@@ -35,7 +71,7 @@
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #ff69b4;
     color: white;
     border: none;
     cursor: pointer;

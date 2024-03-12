@@ -1,23 +1,23 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 export default function card() {
   return (
-  <>
-    <body></body>
-    <div class="maincard">NEHAO</div>
-    <div class="overlaycard">
-    </div>
-    <div class="mainpart">
-            <h1>Welcome to UWUmarketplace</h1>
-            <p>Et markedsplads hvor du både kan købe produkter og ydelser</p>
-            <a href="www.youtube.com">
-            <button id="getready" onclick="www.youtube.com">Kom I gang</button>
-            </a>
-             </div>
-    <p></p>
-  </>
+    <>
+    
+      <div className="maincard">UWUmarketplace</div>
+      <div className="overlaycard">
+          <div className="mainpart">
+              <h1>Welcome to UWUmarketplace</h1>
+              <p>Et markedsplads hvor du både kan købe produkter og ydelser</p>
+              <Link to="/login" id="getready">Kom i gang</Link>
+           
+             
+          </div>
+      </div>
+            
+      <p></p>
+    </>
 
   )
 }
 
-//hi

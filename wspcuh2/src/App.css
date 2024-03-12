@@ -45,13 +45,16 @@
   background-color: rgb(251,152,255);
   font-size: 15px;
   font-weight: bolder;
+  list-style: none;
   border: none;
   border-radius: 15px;
   padding: 10px 20px;
-  box-shadow:0px 0px 7px #ffa8f0;
+  box-shadow: 0px 0px 7px #ffa8f0;
   height: 4rem;
   width: 15rem;
+  text-decoration: none; /* Add this line to remove the underline */
 }
+
 .maincard {
   font-size: 50px;
   color: white;
@@ -85,8 +88,7 @@
 .mainpart{
   color: white;
   text-align: center;
-  
-  
+  align-items: center;
 }
 /* Hide the scrollbar */
 /* Hide the scrollbar */
@@ -119,12 +121,65 @@ body{
   background-attachment: fixed;
 }
 
+.logout-button {
+  padding: 8px 15px;
+  margin-left: 20px; /* Space it out from the profile image */
+  background-color: #f00; /* Red, but choose a color that fits your design */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #c00; /* Darker shade of red on hover */
+}
 
 
 /* Nav menu  */
 
 /* Navbar styles */
 /* Navbar styles */
+.profile-image {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* This creates the rounded effect */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border: 2px solid white; /* Optional: adds a white border around the image */
+}
+.profile-image:hover {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* This creates the rounded effect */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border: 2px solid white; /* Optional: adds a white border around the image */
+  cursor: pointer;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* Ensure there's no excessive space on the right */
+  padding-right: 20px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -210,5 +265,25 @@ body{
   .nav-links li {
     margin-right: 0; /* Remove right margin */
     margin-bottom: 10px; /* Add bottom margin to separate links */
+  }
+}
+
+
+/*everything selected*/
+
+all{
+  opacity: 0;
+  transform: translateY(20px); /* Start from 20px below */
+  animation: easeIn 1s forwards; /* Apply animation */
+}
+
+@keyframes easeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

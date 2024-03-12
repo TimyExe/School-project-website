@@ -11,8 +11,6 @@ export default function Cart() {
                 <h1> someitem </h1>
                 <h1>35kr</h1>
          
-         
-              
         </div>
         
       </div>

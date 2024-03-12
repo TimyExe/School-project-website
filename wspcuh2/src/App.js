@@ -32,6 +32,10 @@ function App() {
           element={<ProtectedRoute element={<UserProfile />} />}
         />
       </Routes>
+      <footer class="site-footer">
+  <p>&copy; Copyright by Akki, Timmy</p>
+</footer>
+
     </Router>
   );
 }

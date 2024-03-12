@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import "../styles/login.css"; 
-import useSignUp from "../scripts/signup.js"; 
+
 import { useAuth } from '../contexts/AuthContext'; 
 function Register() {
   const [formData, setFormData] = useState({

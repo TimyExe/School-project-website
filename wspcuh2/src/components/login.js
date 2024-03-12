@@ -14,7 +14,8 @@ function Login() {
     e.preventDefault();
     await signIn(email, password);
     console.log(currentUser);
-    if (currentUser) {
+    
+    if (!error) {
       navigate("/");
     }
   };
@@ -25,7 +26,8 @@ function Login() {
         <img src="/ourlogo.png" alt="Logo" className="login-logo" /> {/* Ensure the path to your logo is correct */}
         {error && <p className="error-message">{error}</p>} {/* Display login errors */}
         <form onSubmit={handleSubmit}>
-          <input 
+          <input
+            className='inputbox'
             type="email" 
             name="email" 
             value={email} 
@@ -34,6 +36,7 @@ function Login() {
             required 
           />
           <input 
+            className='inputbox'
             type="password" 
             name="password" 
             value={password} 
@@ -43,7 +46,7 @@ function Login() {
           />
           <button type="submit" className="dropbtn">Login</button>
         </form>
-        <p>Don't have an account? <Link to="/register">Register</Link></p>
+        <p>Har ikke en? <Link to="/register">Registere</Link></p>
       </div>
     </div>
   );

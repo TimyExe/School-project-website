@@ -1,6 +1,6 @@
 // AuthContext.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged,signOut } from "firebase/auth";
 import { ref as dbRef, get, set } from "firebase/database";
 import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
 import { auth, db, storage } from '../firebase-config'; // Adjust path as needed

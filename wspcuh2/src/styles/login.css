@@ -35,23 +35,29 @@
 input[type="file"] {
   opacity: 0; /* Hidden but accessible */
   width: 100%;
-  position: absolute;
+  position: center;
   left: 0;
   top: 0;
   height: 100%;
   cursor: pointer;
+
 }
 
-  .login-form {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-  }
-  
+.login-form {
+  background: #ffffff; /* Remove background color */
+  border: 2px solid #ffffff; /* Add border to create an outline */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(255, 169, 229);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  position: relative; /* Ensure the position is relative for absolute positioning of pseudo-element */
+}
+
+
+            
   .login-logo {
     height: 80px;
     margin-bottom: 20px;
@@ -65,21 +71,31 @@ input[type="file"] {
     display: block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  button {
+  .inputbox{
+    width: 300px !important;
+    margin: 0 auto !important;
+    color: #5a5a5a!important;
+    border-radius: 10px!important;
+    position: relative!important;
+    overflow: hidden !important;
+  }
+  
+
+
+ 
+  /* button {
     background-color: #ff69b4;
     color: white;
     border: none;
     cursor: pointer;
-  }
+  } */
   
-  button:hover {
-    opacity: 0.8;
-  }
+
   
   /* Dropdown styles */
   .dropdown {
@@ -97,6 +113,7 @@ input[type="file"] {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 2rem;
   }
   
   .dropbtn:hover {

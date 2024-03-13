@@ -7,8 +7,10 @@ import Cart from './components/Cart';
 import UserProfile from './components/UserProfile';
 import NavigationMenu from "./components/NavigationMenu";
 import ProtectedRoute from './ProtectedRoute';
+import ProtectedRouteadmin from './ProtectedRouteadmin';
 import Login from "./components/login.js";
 import Register from "./components/Register.js";
+import AdminDashboard from "./components/AdminDashboard.js"
 function App() {
 
 
@@ -31,8 +33,12 @@ function App() {
           path="/user"
           element={<ProtectedRoute element={<UserProfile />} />}
         />
+        <Route
+          path="/adminDashboard"
+          element={<ProtectedRouteadmin element={<AdminDashboard />} />}
+        />
       </Routes>
-      <footer class="site-footer">
+      <footer className="site-footer">
   <p>&copy; Copyright by Akki, Timmy</p>
 </footer>
 

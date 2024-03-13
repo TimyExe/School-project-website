@@ -14,8 +14,7 @@
     border-radius: 3%;
     margin-left: 2rem;
     margin-right: 2rem;
-    display: flex;
-    align-items: flex-start;
+    
     justify-content: center;
 
 }
@@ -30,20 +29,44 @@ body{
     background-color: rgba(206, 148, 200, 0.9);;
     color: aliceblue;
     font-family:"Bebas Neue", sans-serif;
-    justify-content: space-between;
+    justify-content: space-between !important;
     width: 75rem;
     height: 7rem;
     border-radius: 5px;
     font-size: 15px;
+    text-align: left;
+    padding: 5px;
+    
+
+}
+
+.someitem{
+    position: relative;
+    justify-content: space-between;
+
 
 }
 
 
+.thep{
+    margin-top: -1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+
+.price{
+    position: absolute !important;
+    text-align: left !important;
+    display: inline-block;
+
+}
 
 
 /*all selected*/
 /*animation handler*/
-all{
+div{
     opacity: 0;
     transform: translateY(20px); /* Start from 20px below */
     animation: easeIn 1s forwards; /* Apply animation */
@@ -59,5 +82,8 @@ all{
       transform: translateY(0);
     }
   }
+
+
+
 
 

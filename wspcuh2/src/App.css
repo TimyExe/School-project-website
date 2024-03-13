@@ -103,14 +103,14 @@
 
 .site-footer {
   text-align: center;
-  padding: 6px 11px; /* Reduced padding for a smaller footer */
+  padding: 6px 0px; /* Reduced padding for a smaller footer */
   background-color: rgba(0, 0, 0, 0.8); /* Dark and transparent background */
   color: #fff; /* Light text color for contrast against the dark background */
   border-top: 1px solid #666; /* Slightly lighter border for subtle separation */
   position: relative;
   bottom: 0;
   width: 100%;
-  font-size: 14px; /* Smaller font size for a more compact look */
+    font-size: 14px; /* Smaller font size for a more compact look */
 }
 
 
@@ -163,17 +163,26 @@ body{
 .user:hover {
   color: rgb(251,152,255);
 }
+@keyframes glow2{
+  from {
+    box-shadow: 0 0 10px #e42de4; /* Initial glow color */
+  }
+  to {
+    box-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4; /* Final glow color (pink) */
+  }
+}
 .logout-button {
   padding: 8px 15px;
   position: absolute;
-  top: 3vh;
-  right: 3%;
+  top: 85vh;
+  animation: glow2 2s infinite alternate;
+  right: 0%;
   width: auto !important;
   background-color: #ff69b4;
     color: white;
     border: none;
     cursor: pointer;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .logout-button:hover {

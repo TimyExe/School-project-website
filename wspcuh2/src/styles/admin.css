@@ -1,0 +1,91 @@
+/* Style for the file input container */
+.file-input-container {
+    margin-bottom: 10px; /* Aligns with other form elements */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  /* Custom style for the file input 'button' */
+  .file-input-button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background-color: #ff69b4; /* Match your button color */
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .file-input-button:hover {
+    opacity: 0.8;
+    background-color: #c5528b;
+  }
+  
+  /* Hide the actual input but make it accessible */
+  input[type="file"] {
+    opacity: 0; /* Hidden but accessible */
+    width: 100%;
+    position: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .login-form {
+    background: #ffffff; /* Remove background color */
+    border: 2px solid #ffffff; /* Add border to create an outline */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 169, 229);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    position: relative; /* Ensure the position is relative for absolute positioning of pseudo-element */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .inputbox {
+    width: 300px !important;
+    margin: 0 auto !important;
+    color: #5a5a5a!important;
+    border-radius: 10px!important;
+    position: relative!important;
+    overflow: hidden !important;
+  }
+  
+  .dropbtn {
+    background-color: #ff69b4; /* Pinkish color */
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  .dropbtn:hover {
+    background-color: #ff1493; /* Darker pinkish color on hover */
+  }
+  
+  /* Style for the description input */
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

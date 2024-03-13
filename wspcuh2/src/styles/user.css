@@ -1,0 +1,133 @@
+/* Paste your CSS styles here */
+.App {
+    text-align: center;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  
+  .profile-image:hover {
+    cursor: pointer;
+  }
+  
+  .user-info {
+    margin-top: 20px;
+  }
+  
+  .user-info p {
+    margin: 5px 0;
+  }
+  
+  .logout-button {
+    padding: 8px 15px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: #a34172;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(168, 121, 163, 0.9);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    color: rgb(248, 247, 247);
+    text-decoration: none;
+    font-size: 24px;
+    width: 4rem;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    color: rgb(248, 247, 247);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(251,152,255);
+  }
+  
+  /* Hover animation for navbar links */
+  .nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(251,152,255);
+    transition: width 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+
+.button-group {
+    margin-top: 20px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 8px 15px;
+    margin-right: 20px; /* Increased margin between buttons */
+    background-color: #e42de4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    animation: glow 3s infinite alternate; /* Slower animation */
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #85194b;
+    animation: none; /* Remove animation on hover */
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 5px 5px #e42de4; /* Initial glow color (subtle glow at the bottom) */
+    }
+    to {
+      box-shadow: 0 5px 5px #ff69b4; /* Final glow color (pink) */
+    }
+  }
+  
+  

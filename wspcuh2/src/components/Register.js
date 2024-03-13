@@ -3,10 +3,11 @@
 
 
 import React, { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate,Navigate } from 'react-router-dom';
 import "../styles/login.css"; 
 
 import { useAuth } from '../contexts/AuthContext'; 
+
 function Register() {
   const [formData, setFormData] = useState({
     username: '',
@@ -18,7 +19,7 @@ function Register() {
   });
   const [isRegistered, setIsRegistered] = useState(false);
   const { signUp, error,currentUser } = useAuth();
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -45,6 +46,7 @@ function Register() {
     await signUp(formData);
     console.log(currentUser);
      if (!error) {
+      navigate("/")
        setIsRegistered(true);
      }
   };

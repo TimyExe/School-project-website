@@ -1,0 +1,102 @@
+.box{
+    height: 100rem!important;
+    display: flex;
+}
+
+
+.title{
+    text-align: center;
+    color: #ffffff;
+
+}
+/*container for the images*/
+.images {
+    display: flex;
+    margin-top: -65rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+
+.image{
+
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    border-radius: 5%;
+}
+
+.name{
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+
+.text{
+
+    text-align: center;
+
+}
+
+.maintext{
+
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 5rem!important;
+}
+
+
+.sectext{
+    margin-top: 50rem;
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10rem!important;
+    text-align: left !important;
+    background-color: #835d7eb6;
+    border-radius: 15px;
+    border-color:#f153ff;
+    border-width: 2px;
+    padding: 2%;
+
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+   /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.planetminecraft.com%2Ffiles%2Fimage%2Fminecraft%2Ftexture-pack%2F2022%2F302%2F15588931-enchanted-item-glint_xl.jpg&f=1&nofb=1&ipt=3071e7ee63b40244d7473cf76e8bb05707e9fbfd309c64e776f5f6033cf2a24d&ipo=images") ;
+ */
+   background-image: linear-gradient(
+    -225deg,
+    #ffa8e9 0%,
+    #ca98ff 29%,
+    #f153ff 67%,
+    #ffadff 100%
+  );
+
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

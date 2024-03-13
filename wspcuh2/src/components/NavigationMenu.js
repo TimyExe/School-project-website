@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {useAuth} from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 function NavigationMenu() {
-    const {currentUser,loading,logOut} = useAuth()
+    const {currentUser,ioLoggedIn,logOut,loading} = useAuth()
     console.log(loading)
     const navigate = useNavigate(); // Get the navigate function
 
@@ -18,11 +18,11 @@ function NavigationMenu() {
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/cart">Cart</Link></li>
-                   
+                   {ioLoggedIn?currentUser.role==="admin"?<li><Link to="/adminDashboard">AdminDashBoard</Link></li>:"":""}
                 </ul>
-                
                 <Link to="/user"><img src={currentUser?currentUser.imageUrl:null} alt="User" className={currentUser?"profile-image":"hide"} /></Link>
-                <button className='logout-button' onClick={()=>{
+                
+                <button className='logout-button' style={currentUser?{}:{top: "0%"}} onClick={()=>{
                    if(currentUser){
                     logOut()
                    }else{

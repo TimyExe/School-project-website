@@ -39,7 +39,9 @@ const [loading, setLoading] = useState(true);
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const userData = await fetchUserData(userCredential.user.uid);
+      
       setCurrentUser(userData);
+      
     } catch (err) {
       setError(err.message);
     }
@@ -91,7 +93,7 @@ const [loading, setLoading] = useState(true);
     signIn,
     signUp,
     loading,
-    logOut
+    logOut,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

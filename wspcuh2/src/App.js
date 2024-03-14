@@ -39,7 +39,7 @@ function App() {
         />
       </Routes>
       <footer className="site-footer">
-  <p>&copy; Copyright by Akki, Timmy</p>
+  <p>&copy; Copyright by Toji, Hookey</p>
 </footer>
 
     </Router>

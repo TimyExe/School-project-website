@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Card.css';
 import { Link } from "react-router-dom";
 
-function Card() {
+function Card({image}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleContent = () => {
@@ -16,7 +16,7 @@ function Card() {
         
         <div className="container">
           <div className="card-content">
-            <img src="path/to/your/image.jpg" alt="Card Detailed" className="card-image"/>
+            <img src={image} alt="Card Detailed" className="card-image"/>
             <h3 className="card-title">Card Title Detailed</h3>
             <p className="card-description">More detailed description here</p>
             <button className="card-link" onClick={toggleContent}>tilføj til kurve 🛒</button>

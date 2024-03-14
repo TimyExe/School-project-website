@@ -61,6 +61,7 @@
 }
 
 .maincard {
+  
   font-size: 50px;
   color: white;
   text-align: center;
@@ -75,9 +76,9 @@
   font-style: normal;
 }
 
-.imgg{
-  width: 100%;
-  border-radius: 15px;
+.cards-container{
+ transform: translateY(-50rem)!important;
+
 }
 
 .button{
@@ -111,17 +112,12 @@
  
 }
 .overlaycard{
-   
   margin-left: 2rem;
   margin-right: 2rem;
-  height: 100rem!important;
+  height: 60rem!important;
 }
 
-.cards-container{
-  
 
-
-}
 
 .site-footer {
   text-align: center;

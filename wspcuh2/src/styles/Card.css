@@ -1,6 +1,6 @@
 /* Card.css Updated Styles */
 .card {
-    background-color: #ffafee; /* Dark pink background */
+    background-color: #ffb8f0be; /* Dark pink background */
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent box shadow */
     display: inline-block;
@@ -50,13 +50,14 @@
 
 .card-link {
     color: #fff; /* White color for link */
-    background-color: #f06292; /* Slightly darker pink for the button/link */
+    background-color: #ffa9c7; /* Slightly darker pink for the button/link */
     padding: 8px 12px; /* Padding for a button-like appearance */
+
     border-radius: 4px; /* Rounded corners for the link/button */
     text-decoration: none;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .card-link:hover {
-    background-color: #e91e63; /* Dark pink on hover for the link/button */
+    background-color: #cf7b97; /* Dark pink on hover for the link/button */
 }
